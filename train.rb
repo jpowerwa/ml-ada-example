@@ -6,7 +6,7 @@ def load_training_data()
         .map {|point| {:temp => point[0].to_i, :precip => point[1]}}
 end
 
-# Check the data against a candidate snow temperatures, return 
+# Check the data against a candidate snow temperatures, return
 # percent of data correct
 def check_correctness_percent(data, candidate_temperature)
     num_correct = 0
